@@ -1,0 +1,1 @@
+Тестовый модуль для OpenCart 15.5.5.1.2 oc_mod_hello_world 
