@@ -21,3 +21,6 @@
 	
 6. языковой файл модуля для админпанели:
 	> admin\language\russian\module\helloworld.php
+	
+7. Модель :
+	> catalog\model\catalog\mytest.php
