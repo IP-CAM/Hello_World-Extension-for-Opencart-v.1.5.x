@@ -12,6 +12,24 @@
 		<p>код модуля</p>
 		<p><?= $text_module?></p>
 		<p><?= $text_success?></p>
-		<p></p>
+		<hr>
+		<p>
+			<?php
+				var_dump($temp);
+			?>
+		</p>
+		<hr>
+		<p>
+			<?php
+				var_dump($temp_info);
+			?>
+		</p>
+		<hr>
+		<p>
+			<?php
+				var_dump($hello_world);
+			?>
+		</p>
+
 	</div>
 </div>

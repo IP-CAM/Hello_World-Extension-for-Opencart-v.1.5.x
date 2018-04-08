@@ -30,16 +30,15 @@
 
 
 			//TODO: подключение модели
-			/*
+
 						$this->load->model('catalog/helloworld');
-						$temp=$this->model_catalog_helloworld->function_mytest();
+						$temp=$this->model_catalog_helloworld->function_helloworld();
 						$temp_info=$this->model_catalog_helloworld->getInformations();
 						$temp_hello_world=$this->model_catalog_helloworld->getHelloWorldsAll();
 
 						$this->data['temp'] = $this->model_catalog_helloworld->function_helloworld();
 						$this->data['temp_info'] = $this->model_catalog_helloworld->getInformations();
-						$this->data['hello_world'] = $this->model_catalog_helloworld->getHelloWorldsAll();*/
-
+						$this->data['hello_world'] = $this->model_catalog_helloworld->getHelloWorldsAll();
 
 			//$this->data['test_out'] = 'Тестовый вывод с контролера';
 
