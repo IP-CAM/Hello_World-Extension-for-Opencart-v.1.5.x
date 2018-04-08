@@ -22,18 +22,27 @@
 			} else {
 				$this->template = 'default/template/module/helloworld.tpl';
 			}
-/*
-			$this->load->model('catalog/helloworld');
-			$temp=$this->model_catalog_helloworld->function_mytest();
-			$temp_info=$this->model_catalog_helloworld->getInformations();
-			$temp_hello_world=$this->model_catalog_helloworld->getHelloWorldsAll();
 
-			$this->data['temp'] = $this->model_catalog_helloworld->function_helloworld();
-			$this->data['temp_info'] = $this->model_catalog_helloworld->getInformations();
-			$this->data['hello_world'] = $this->model_catalog_helloworld->getHelloWorldsAll();*/
+			$this->language->load('module/helloworld');
+			$this->data['heading_title'] = $this->language->get('heading_title');
+			$this->data['text_module'] = $this->language->get('text_module');
+			$this->data['text_success'] = $this->language->get('text_success');
 
 
-			$this->data['test_out'] = 'Тестовый вывод с контролера';
+			//TODO: подключение модели
+			/*
+						$this->load->model('catalog/helloworld');
+						$temp=$this->model_catalog_helloworld->function_mytest();
+						$temp_info=$this->model_catalog_helloworld->getInformations();
+						$temp_hello_world=$this->model_catalog_helloworld->getHelloWorldsAll();
+
+						$this->data['temp'] = $this->model_catalog_helloworld->function_helloworld();
+						$this->data['temp_info'] = $this->model_catalog_helloworld->getInformations();
+						$this->data['hello_world'] = $this->model_catalog_helloworld->getHelloWorldsAll();*/
+
+
+			//$this->data['test_out'] = 'Тестовый вывод с контролера';
+
 
 			$this->response->setOutput($this->render());
 		}
