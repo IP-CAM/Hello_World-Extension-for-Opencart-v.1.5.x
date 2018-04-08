@@ -24,3 +24,6 @@
 	
 7. Модель :
 	> catalog\model\catalog\mytest.php
+	
+8. Дириктория для изображений:
+	> image\module_image\module_hello_world_image\
