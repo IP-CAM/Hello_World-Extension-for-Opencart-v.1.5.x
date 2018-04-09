@@ -34,3 +34,4 @@
 [Создаем модуль в OpenCart](http://s-engineer.ru/sozdaem-modul-v-opencart/)
 [OpenCart, прикручиваем представление к контроллеру](http://s-engineer.ru/opencart-prikruchivaem-predstavlenie-k-kontrolleru/)
 [OpenCart, прикручиваем модель к контроллеру](http://s-engineer.ru/opencart-prikruchivaem-model-k-kontrolleru/)
+[Справочник по MySQL](http://www.spravkaweb.ru/mysql/sql/createtable)

@@ -15,9 +15,55 @@
 			return 'function_helloworld modele ModelCatalogHelloworld';
 		}
 
+		public function helloworld()
+		{
+			$helloworld = array();
+			$this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "hello_world (
+			`id` INT(11) NOT NULL AUTO_INCREMENT,
+			`name` VARCHAR(255) NOT NULL,
+			`image` VARCHAR(255) NOT NULL,
+			`link` VARCHAR(255) NOT NULL,
+			`text` TEXT NOT NULL,
+			PRIMARY KEY(`id`)
+		)");
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "hello_world");
+
+			foreach ($query->rows as $result) {
+				$helloworld[] = $result;
+			}
+			return $helloworld;
+		}
+
+		public function helloworldNew()
+		{
+			$helloworld = array();
+			$this->db->query("CREATE TABLE IF NOT EXISTS " . DB_PREFIX . "hello_world_1 (
+			`id` INT(11) NOT NULL AUTO_INCREMENT,
+			`name` VARCHAR(255) NOT NULL,
+			`image` VARCHAR(255) NOT NULL,
+			`link` VARCHAR(255) NOT NULL,
+			`text` TEXT NOT NULL,
+			PRIMARY KEY(`id`)
+		)");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "hello_world_1 (name , image, link, text)
+			VALUES(
+					'Запись в таблице hello_world_1',  
+					'\image\module_image\module_hello_world_image\module_hello_world_image.png',
+					'https://ocstore.com/', 
+					'testText'
+			)");
+
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "hello_world_1");
+
+			foreach ($query->rows as $result) {
+				$helloworld[] = $result;
+			}
+			return $helloworld;
+		}
+
 		public function getHelloWorldsAll()
 		{
-			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "hello_world");
+			$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "hello_world_1");
 
 			return $query->rows;
 		}
