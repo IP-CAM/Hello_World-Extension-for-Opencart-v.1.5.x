@@ -29,6 +29,8 @@
 			$this->data['text_success'] = $this->language->get('text_success');
 
 
+			//TODO: подключение модели
+
 						$this->load->model('catalog/helloworld');
 						$temp=$this->model_catalog_helloworld->function_helloworld();
 						$temp_info=$this->model_catalog_helloworld->getInformations();
@@ -44,7 +46,7 @@
 						$this->data['hello_world'] = $this->model_catalog_helloworld->helloworld();
 						$this->data['hello_world_new'] = $this->model_catalog_helloworld->helloworldNew();
 
-						//$this->data['test_out'] = 'Тестовый вывод с контролера';
+			//$this->data['test_out'] = 'Тестовый вывод с контролера';
 
 
 			$this->response->setOutput($this->render());
