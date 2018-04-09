@@ -30,6 +30,12 @@
 				var_dump($hello_world);
 			?>
 		</p>
+<hr>
+		<p>
+			<?php
+				var_dump($hello_world_new);
+			?>
+		</p>
 
 	</div>
 </div>
