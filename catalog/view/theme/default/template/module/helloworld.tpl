@@ -13,29 +13,23 @@
 		<p><?= $text_module?></p>
 		<p><?= $text_success?></p>
 		<hr>
-		<p>
-			<?php
-				var_dump($temp);
-			?>
-		</p>
-		<hr>
-		<p>
-			<?php
-				var_dump($temp_info);
-			?>
-		</p>
-		<hr>
-		<p>
-			<?php
-				var_dump($hello_world);
-			?>
-		</p>
-<hr>
-		<p>
-			<?php
-				var_dump($hello_world_new);
-			?>
-		</p>
+
+		<div class="panel panel-default">
+			<!-- Default panel contents -->
+			<div class="panel-heading">Panel heading</div>
+			<div class="panel-body">
+				<p>...</p>
+			</div>
+
+			<!-- List group -->
+			<ul class="list-group">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+		</div>
 
 	</div>
 </div>
